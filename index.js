@@ -374,5 +374,11 @@ $(document).ready(function () {
             background: 'linear-gradient(145deg, #276e6c, #2e8380)'
         })
     })
+    $(".contact_img").eq(0).click(function () {
+        $(location).attr("href", "mailto:hunk92@naver.com")
+    })
+    $(".contact_img").eq(2).click(function () {
+        $(location).attr("href", "https://open.kakao.com/o/s7gigg1e")
+    })
 
 });

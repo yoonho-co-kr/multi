@@ -163,7 +163,7 @@ body,
 }
 
 .picture>img {
-    height: 100%;
+    width: 100%;
 }
 
 .me_desc li {
@@ -225,6 +225,13 @@ body,
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.skill_wrap {
+    width: calc(100% / 5);
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -438,7 +445,7 @@ svg {
 }
 
 .txt_title {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -568,6 +575,14 @@ svg {
     ;
 }
 
+.contact_img_box a {
+    width: calc((100% - 100px)/3);
+}
+
+.contact_img:nth-child(1) {
+    width: 100%;
+}
+
 @media screen and (max-width:1100px) {
     .skill_info_box {
         width: 100%;
@@ -616,7 +631,12 @@ svg {
 
 @media screen and (max-width:900px) {
     .skill_info_box {
-        gap: 10vw;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .skill_wrap {
+        width: calc(100% / 3);
     }
 
     .portfolio_box {
@@ -1001,6 +1021,10 @@ svg {
             inset -6px -6px 16px rgba(255, 255, 255, 0.5),
             inset 7px 7px 16px rgba(70, 70, 70, 0.12);
         ;
+    }
+
+    .contact_img_box a {
+        width: calc(100%);
     }
 }
 
