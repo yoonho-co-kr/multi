@@ -219,12 +219,13 @@ body,
 .skill_info_box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     /* gap: 30px; */
     padding-top: 200px;
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .skill_box {
@@ -356,7 +357,7 @@ svg {
 
 .portfolio_contain {
     /* background-color: #2b7a78; */
-    height: 300vh;
+    height: 400vh;
 }
 
 .portfolio_title {
@@ -595,7 +596,7 @@ svg {
     }
 
     .portfolio_contain {
-        height: 250vh;
+        height: 350vh;
     }
 
     .contact_box {
@@ -933,6 +934,14 @@ svg {
 
     .skill_bar>.bar_box:nth-child(5)>.bar>.progress {
         background: linear-gradient(90deg, #ccabd8 0%, #86e3ce 100%);
+    }
+
+    .skill_bar>.bar_box:nth-child(6)>.bar>.progress {
+        background: linear-gradient(90deg, #86e3ce 0%, #d0e6a5 100%);
+    }
+
+    .skill_bar>.bar_box:nth-child(7)>.bar>.progress {
+        background: linear-gradient(90deg, #d0e6a5 0%, #ffdd94 100%);
     }
 
     .contact_img_box {

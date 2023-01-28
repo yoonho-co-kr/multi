@@ -85,8 +85,8 @@ function randomLetter() {
 
 //스킬 섹션
 $(document).ready(function () {
-    let skill_names = ["HTML", "CSS", "JavaScript", "Jquery", "MySQL"]
-    let skill_number = [90, 90, 80, 80, 50]
+    let skill_names = ["HTML", "CSS", "JavaScript", "Jquery", "MySQL", "Photoshop", "Illustrator"]
+    let skill_number = [90, 90, 80, 80, 50, 80, 90]
     let color_combo = ["#17252A", "#2B7A78", '#3AAFA9', '#DEF2F1', '#FEFFFF']
 
     let number = document.getElementsByClassName('skill_number')
@@ -341,7 +341,7 @@ $(document).ready(function () {
         let s_top = $(window).scrollTop();
         let skill_c = $(".skill_contain").offset().top;
         let more_scroll = 150;
-        let skill_number = [90, 90, 80, 80, 50]
+        let skill_number = [90, 90, 80, 80, 50, 80, 90]
         let progress = document.getElementsByClassName('progress')
 
         if (s_top >= skill_c - more_scroll && s_top <= skill_c) {
