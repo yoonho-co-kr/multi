@@ -85,8 +85,8 @@ function randomLetter() {
 
 //스킬 섹션
 $(document).ready(function () {
-    let skill_names = ["HTML", "CSS", "JavaScript", "Jquery", "MySQL", "Photoshop", "Illustrator"]
-    let skill_number = [90, 90, 80, 80, 50, 80, 90]
+    let skill_names = ["HTML", "CSS", "JavaScript", "Jquery", "React", "MySQL", "Photoshop", "Illustrator"]
+    let skill_number = [90, 90, 80, 80, 60, 50, 80, 90]
     let color_combo = ["#17252A", "#2B7A78", '#3AAFA9', '#DEF2F1', '#FEFFFF']
 
     let number = document.getElementsByClassName('skill_number')
@@ -123,10 +123,10 @@ $(document).ready(function () {
                 clearInterval();
             }
             else {
-                counter += 1;
+                counter += 5;
                 number[i].innerHTML = counter + "%"
             }
-        }, 30)
+        }, 100)
     }
     $(window).scroll(function () {
         let s_top = $(window).scrollTop();
@@ -265,6 +265,11 @@ $(document).ready(function () {
                         animation: "eightty 2.4s linear forwards"
                     })
                 }
+                else if (skill_number[i] == 60) {
+                    $("circle").eq(i).css({
+                        animation: "sixty 1.8s linear forwards"
+                    })
+                }
                 else if (skill_number[i] == 50) {
                     $("circle").eq(i).css({
                         animation: "fifty 1.5s linear forwards"
@@ -341,7 +346,7 @@ $(document).ready(function () {
         let s_top = $(window).scrollTop();
         let skill_c = $(".skill_contain").offset().top;
         let more_scroll = 150;
-        let skill_number = [90, 90, 80, 80, 50, 80, 90]
+        let skill_number = [90, 90, 80, 80, 60, 50, 80, 90]
         let progress = document.getElementsByClassName('progress')
 
         if (s_top >= skill_c - more_scroll && s_top <= skill_c) {

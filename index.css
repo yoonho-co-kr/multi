@@ -346,6 +346,16 @@ svg {
     }
 }
 
+@keyframes sixty {
+    0% {
+        stroke-dashoffset: 472;
+    }
+
+    100% {
+        stroke-dashoffset: 220;
+    }
+}
+
 @keyframes fifty {
     0% {
         stroke-dashoffset: 472;
@@ -962,6 +972,10 @@ svg {
 
     .skill_bar>.bar_box:nth-child(7)>.bar>.progress {
         background: linear-gradient(90deg, #d0e6a5 0%, #ffdd94 100%);
+    }
+
+    .skill_bar>.bar_box:nth-child(8)>.bar>.progress {
+        background: linear-gradient(90deg, #ffdd94 0%, #86e3ce 100%);
     }
 
     .contact_img_box {
